@@ -26,6 +26,7 @@ GCAST_BLACKLIST = [
     -1001459701099,  # CatUserbotSupport
     -1001109837870,  # TelegramBotIndonesia
     -1001752592753,  # Skyzusupport
+    -1001575341991,  # Kyurasupport
 ]
 
 
@@ -37,9 +38,9 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Sebuah Pesan atau Reply Goblok**")
         return
-    kk = await event.edit("`Globally Broadcasting Msg...`")
+    kk = await event.edit("`Sabar Lgi Dikirim Kalo Limit Hapus Akun Aja Ngentod...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -66,9 +67,9 @@ async def gucast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Sebuah Pesan atau Reply Goblok**")
         return
-    kk = await event.edit("`Globally Broadcasting Msg...`")
+    kk = await event.edit("`Sabar Lgi Dikirim Kalo Limit Hapus Akun Aja Ngentod...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
