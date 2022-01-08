@@ -118,10 +118,10 @@ async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
         "**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**\n"
-        "✣ 𝐌𝐘 𝐑𝐄𝐏𝐎\n"
-        "✣ [𝐊𝐘𝐔𝐑𝐀-𝐔𝐒𝐄𝐑𝐁𝐎𝐓​](https://github.com/Kyuraxp/kyura-userbot)\n"
-        "✣ **Oᴡɴᴇʀ​** ➠ [Kyura](t.me/kyuraonly)\n"
-        "✣ **Sᴜᴘᴘᴏʀᴛ**​ ➠ [groups](t.me/kyurasupport)\n"
+        "✣ **ᴍʏ ʀᴇᴘᴏ​** ➠ [ᴋʏᴜʀᴀ-ᴜsᴇʀʙᴏᴛ​](https://github.com/Kyuraxp/kyura-userbot)\n"
+        "✣ **Oᴡɴᴇʀ​** ➠ [ᴋʏᴜʀᴀ](t.me/kyuraonly)\n"
+        "✣ **Sᴜᴘᴘᴏʀᴛ​** ➠ [ɢʀᴏᴜᴘ](t.me/kyurasupport)\n"
+        "✣ **ᴘʀᴏᴊᴇᴄᴛs**​ ➠ [ᴄʜᴀɴɴᴇʟ](t.me/kyuraprojects)\n"
     )
 
 
