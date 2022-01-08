@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 @register(outgoing=True, pattern="^P(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("𝐀𝐬𝐬𝐚𝐥𝐚𝐦𝐮'𝐚𝐥𝐚𝐢𝐤𝐮𝐦...")
+    await typew.edit("𝐀𝐬𝐬𝐚𝐥𝐚𝐦𝐮'𝐚𝐥𝐚𝐢𝐤𝐮𝐦 𝐍𝐠𝐞𝐧𝐭𝐨𝐨𝐨𝐭𝐭𝐭𝐭𝐭𝐭...")
 
 
 @register(outgoing=True, pattern="^.atg(?: |$)(.*)")
@@ -23,7 +23,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern="^L(?: |$)(.*)")
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("𝐖𝐚'𝐚𝐥𝐚𝐢𝐤𝐮𝐦𝐬𝐚𝐥𝐚𝐦...")
+    await typew.edit("𝐖𝐚'𝐚𝐥𝐚𝐢𝐤𝐮𝐦𝐬𝐚𝐥𝐚𝐦 𝐊𝐨𝐧𝐭𝐨𝐨𝐨𝐥𝐥𝐥𝐥𝐥𝐥...")
 
 
 @register(outgoing=True, pattern="^.dor(?: |$)(.*)")
