@@ -320,7 +320,7 @@ async def redis(alive):
         f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✧ **Bot Ver  :** {BOT_VER} \n"
         f"┃✧ **Modules  :** {len(modules)} Modules \n"
-        f"┃✧ **GitHub   :** [UserBot](https://github.com/Kyuraxp/kyura-userbot \n"
+        f"┃✧ **GitHub   :** [UserBot](https://github.com/Kyuraxp/kyura-userbot) \n"
         f"┃✧ **Owner    :** [Kyura](https://t.me/kyuraonly) \n"
         f"┃✧ **support  :** [groups](https://t.me/kyurasupport) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━✠╯"
