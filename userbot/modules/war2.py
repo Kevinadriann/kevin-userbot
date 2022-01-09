@@ -227,7 +227,7 @@ CMD_HELP.update(
         \n  •  **Function : **Ngatain orang gila title\
         \n\n  •  **Syntax :** `.an`\
         \n  •  **Function : **Liat sendiri\
-        \n\n**Klo mau Req, kosa kata dari lu Hubungi @skyzu**\
+        \n\n**Klo mau Req, kosa kata dari lu Hubungi @kyuraonly**\
     "
     }
 )
