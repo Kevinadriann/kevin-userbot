@@ -18,17 +18,17 @@ async def _(event):
     if not reply_message.media:
         await event.edit("sir, This is not a image ")
         return
-    chat = "@buildstickerbot"
+    chat = "@Stickers"
     await event.edit("Membuat Sticker..")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=164977173)
+                events.NewMessage(incoming=True, from_users=429000)
             )
             msg = await event.client.forward_messages(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await event.reply("unblock me (@buildstickerbot) and try again")
+            await event.reply("unblock me (@Stickers) and try again")
             return
         if response.text.startswith("Hi!"):
             await event.edit(
