@@ -1,4 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
+0# Copyright (C) 2019 The Raphielscape Company LLC.
 #
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
@@ -313,8 +313,7 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━✠╮\n"
-        f"┃✧ **Name     :** {DEFAULTUSER} \n"
-        f"┃✧ **Username :** @{user.username} \n"
+        f"┃✧ **Master :**
         f"┃✧ **Telethon :** Ver {version.__version__} \n"
         f"┃✧ **Python   :** Ver {python_version()} \n"
         f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
