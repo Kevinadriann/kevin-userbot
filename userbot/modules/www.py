@@ -19,7 +19,7 @@ from userbot.events import register
 absen = [
     "**Eh ada kyura**",
     "**Hadir ganteng** 🥵",
-    "**Hadir bro** 😎",
+    "**Hadir Sayang** 😘",
     "**Hadir kak** 😉",
     "**Hadir bang kyura** 😁",
     "**Hadir kak maap telat** 🥺",
