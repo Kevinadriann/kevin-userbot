@@ -78,7 +78,7 @@
     },
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
-      "required": false
+      "required": true
     },
     "S_PACK_NAME": {
       "description": "Nama Sticker Pack Mu",
