@@ -313,15 +313,16 @@ async def redis(alive):
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━✠╮\n"
-        f"┃✧ **Master :**[{user.first_name}](tg://user?id={user.id}) \n"
-        f"┃✧ **Telethon :** Ver {version.__version__} \n"
-        f"┃✧ **Python   :** Ver {python_version()} \n"
-        f"┃✧ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
-        f"┃✧ **Bot Ver  :** {BOT_VER} \n"
-        f"┃✧ **Modules  :** {len(modules)} Modules \n"
-        f"┃✧ **Repo   :** [UserBot](https://github.com/Kyuraxp/kyura-userbot) \n"
-        f"┃✧ **Owner Repo    :** [Kyura](https://t.me/kyuraonly) \n"
-        f"┃✧ **support  :** [groups](https://t.me/kyurasupport) \n"
+        f"┃✩ **Master :** {DEFAULTUSER} \n"
+        f"┃✩ **Username :** @{user.username} \n"
+        f"┃✩ **Telethon :** Ver {version.__version__} \n"
+        f"┃✩ **Python   :** Ver {python_version()} \n"
+        f"┃✩ **Branch   :** {UPSTREAM_REPO_BRANCH} \n"
+        f"┃✩ **Bot Ver  :** {BOT_VER} \n"
+        f"┃✩ **Modules  :** {len(modules)} Modules \n"
+        f"┃✩ **Repo   :** [UserBot](https://github.com/Kyuraxp/kyura-userbot) \n"
+        f"┃✩ **Owner Repo    :** [Kyura](https://t.me/kyuraonly) \n"
+        f"┃✩ **support  :** [groups](https://t.me/kyurasupport) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━✠╯"
     )
     if ALIVE_LOGO:
