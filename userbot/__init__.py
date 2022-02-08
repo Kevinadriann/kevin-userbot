@@ -345,8 +345,8 @@ except Exception as e:
     sys.exit()
 
 async def checking():
-    gocheck = pybase64.b64decode("QGt5dXJhcHJvamVjdHM==")
-    checker = pybase64.b64decode("QEt5dXJhU3VwcG9ydA=")
+    gocheck = pybase64.b64decode("QGt5dXJhcHJvamVjdHM=")
+    checker = pybase64.b64decode("QEt5dXJhU3VwcG9ydA==")
     Input_gocheck = gocheck.decode('utf-8')
     Input_checker = checker.decode('utf-8')
     try:
@@ -363,7 +363,7 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Group Support @KyuraSupport untuk melihat update userbot"
+            "Harap Join Ke Group Support @KyuraSupport untuk melihat update userbot"
             "Jangan Keluar!!")
         quit(1)
 
@@ -389,7 +389,6 @@ async def check_botlog_chatid():
             "Your account doesn't have rights to send messages to BOTLOG_CHATID "
             "group. Check if you typed the Chat ID correctly.")
         sys.exit(1)
-
 
 with bot:
     try:
