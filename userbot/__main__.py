@@ -28,7 +28,7 @@ for module_name in ALL_MODULES:
     imported_module = import_module("userbot.modules." + module_name)
 
 
-LOGS.info(f"⚡Kyura - Userbot⚡ ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN KONTOLL!!!]")
+LOGS.info(f"Kyura - Userbot ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN KONTOLL!!!]")
 
 except Exception as e: 
     LOGS.info(str(e)) 
