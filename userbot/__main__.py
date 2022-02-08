@@ -32,13 +32,9 @@ LOGS.info(f"Kyura - Userbot ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN KONTOLL!!!]")
 
 except Exception as e: 
     LOGS.info(str(e)) 
-try: await 
+try: await
     bot(JoinChannelRequest("@kyuraProjects")) 
     except BaseException:
-        pass 
-try: await
-    bot(InviteToChannelRequest(int(BOTLOG_CHATID), [BOT_USERNAME]))
-    except BaseException: 
         pass 
 try: await
     bot(JoinChannelRequest("@Kyurasupport")) 
