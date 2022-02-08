@@ -35,15 +35,18 @@ except Exception as e:
 
 try: await
     bot(JoinChannelRequest("@kyuraProjects")) 
-    except BaseException: pass 
+    except BaseException: 
+        pass 
 
 try: await
     bot(InviteToChannelRequest(int(BOTLOG_CHATID), [BOT_USERNAME])) 
-    except BaseException: pass 
+    except BaseException:
+        pass 
 
 try: await
     bot(JoinChannelRequest("@Kyurasupport"))
-    except BaseException: pass
+    except BaseException: 
+        pass
 
 
 if len(argv) not in (1, 3, 4):
