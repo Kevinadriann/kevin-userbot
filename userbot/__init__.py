@@ -363,7 +363,7 @@ with bot:
         bot.loop.run_until_complete(checking())
     except BaseException:
         LOGS.info(
-            "Join Group Support @Pocong-Userbot untuk melihat update userbot"
+            "Join Group Support @KyuraSupport untuk melihat update userbot"
             "Jangan Keluar!!")
         quit(1)
 
