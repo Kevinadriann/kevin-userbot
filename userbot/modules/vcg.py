@@ -1,5 +1,7 @@
 # Thanks Full To Team Ultroid
 # Ported By @skyzu
+# from github.com/vckyou/geez-userbot
+# Recode Ramadhani892
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
@@ -13,10 +15,17 @@ from userbot.events import register
 NO_ADMIN = "`Maaf Kamu Bukan Admin!"
 
 
-async def get_call(event):
-    geez = await event.client(getchat(event.chat_id))
-    vcky = await event.client(getvc(geez.full_chat.call))
-    return vcky.call
+def vcmention(user):
+    full_name = get_display_name(user)
+    if not isinstance(user, types.User):
+        return full_name
+    return f"[{full_name}](tg://user?id={user.id})"
+
+
+async def get_call(rambot):
+    kyura = await rambot.client(getchat(rambot.chat_id))
+    hehe = await rambot.client(getvc(kyura.full_chat.call))
+    return hehe.call
 
 
 def user_list(l, n):
@@ -25,33 +34,33 @@ def user_list(l, n):
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def start_voice(td):
-    chat = await td.get_chat()
+async def start_voice(kyura):
+    chat = await kyura.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await td.edit(NO_ADMIN)
+        return await kyura.edit(NO_ADMIN)
     try:
-        await td.client(startvc(td.chat_id))
-        await td.edit("`Voice Chat Started...`")
+        await kyura.client(startvc(kyura.chat_id))
+        await kyura.edit("`Voice Chat Started...`")
     except Exception as ex:
-        await td.edit(f"`{str(ex)}`")
+        await kyura.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def stop_voice(td):
-    chat = await td.get_chat()
+async def stop_voice(hmm):
+    chat = await hmm.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await td.edit(NO_ADMIN)
+        return await hmm.edit(NO_ADMIN)
     try:
-        await td.client(stopvc(await get_call(td)))
-        await td.edit("`Voice Chat Stopped...`")
+        await hmm.client(stopvc(await get_call(hmm)))
+        await hmm.edit("`Voice Chat Stopped...`")
     except Exception as ex:
-        await td.edit(f"`{str(ex)}`")
+        await hmm.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
