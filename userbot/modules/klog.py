@@ -1,7 +1,7 @@
 # Credits: cat userbot
 # Ported by @vckyaz
 # Thanks, GeezProjects <https://github.com/vckyou/GeezProjects>
-# Test module
+# Test module from Ram-Ubot
 
 import asyncio
 
@@ -11,7 +11,7 @@ from userbot import BOTLOG_CHATID
 from userbot import CMD_HELP, LOGS, bot
 from userbot.modules.sql_helper import no_log_pms_sql
 from userbot.modules.sql_helper.globals import addgvar, gvarstatus
-from userbot.modules.ramcals import vcmention
+from userbot.modules.vcg import vcmention
 from userbot.utils import _format, edit_delete, edit_or_reply
 from userbot.utils.tools import media_type
 
@@ -28,23 +28,23 @@ LOG_CHATS_ = LOG_CHATS()
 
 
 @bot.on(events.ChatAction)
-async def logaddjoin(rambot):
-    user = await rambot.get_user()
-    chat = await rambot.get_chat()
+async def logaddjoin(ramubot):
+    user = await ramubot.get_user()
+    chat = await ramubot.get_chat()
     if not (user and user.is_self):
         return
     if hasattr(chat, "username") and chat.username:
-        chat = f"[{chat.title}](https://t.me/{chat.username}/{rambot.action_message.id})"
+        chat = f"[{chat.title}](https://t.me/{chat.username}/{ramubot.action_message.id})"
     else:
-        chat = f"[{chat.title}](https://t.me/c/{chat.id}/{rambot.action_message.id})"
-    if event.user_added:
-        tmp = rambot.added_by
-        text = f"📩 **#TAMBAH_LOG\n •** {vcmention(tmp)} **Menambahkan** {vcmention(user)}\n **• Ke Group** {chat}"
-    elif event.user_joined:
+        chat = f"[{chat.title}](https://t.me/c/{chat.id}/{ramubot.action_message.id})"
+    if ramubot.user_added:
+        tmp = ramubot.added_by
+        text = f"u📩 **#TAMBAH_LOG\n •** {vcmention(tmp)} **Menambahkan** {vcmention(user)}\n **• Ke Group** {chat}"
+    elif ramubot.user_joined:
         text = f"📨 **#LOG_GABUNG\n •** [{user.first_name}](tg://user?id={user.id}) **Bergabung\n • Ke Group** {chat}"
     else:
         return
-    await rambot.client.send_message(BOTLOG_CHATID, text)
+    await ramubot.client.send_message(BOTLOG_CHATID, text)
 
 
 @bot.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
