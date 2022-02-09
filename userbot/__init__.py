@@ -2,25 +2,28 @@
 
 import logging
 import os
-import re
 import time
-import pybase64
-from datetime import datetime
-from distutils.util import strtobool as sb
-from logging import DEBUG, INFO, basicConfig, getLogger
-from math import ceil
-from sys import version_info
-
+import re
 import redis
-from dotenv import load_dotenv
+import pybase64
+
+from platform import uname
+from sys import version_info
+from logging import basicConfig, getLogger, INFO, DEBUG
+from distutils.util import strtobool as sb
+from math import ceil
+
 from pylast import LastFMNetwork, md5
-from pymongo import MongoClient
 from pySmartDL import SmartDL
+from pymongo import MongoClient
+from datetime import datetime
 from redis import StrictRedis
-from telethon import Button, events
-from telethon.sessions import StringSession
-from telethon.tl.functions.channels import JoinChannelRequest as GetSec
+from markdown import markdown
+from dotenv import load_dotenv
+from requests import get
 from telethon.sync import TelegramClient, custom, events
+from telethon.sessions import StringSession
+from telethon import Button, events, functions, types
 from telethon.utils import get_display_name
 
 redis_db = None
@@ -44,11 +47,9 @@ if CONSOLE_LOGGER_VERBOSE:
         level=DEBUG,
     )
 else:
-    basicConfig(
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-        level=INFO)
+    basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+                level=INFO)
 LOGS = getLogger(__name__)
-
 if version_info[0] < 3 or version_info[1] < 8:
     LOGS.info(
         "You MUST have a python version of at least 3.8."
