@@ -49,15 +49,15 @@ async def logaddjoin(ramubot):
 
 @bot.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
 @bot.on(events.MessageEdited(incoming=True, func=lambda e: e.is_private))
-async def monito_p_m_s(kontol):
+async def monito_p_m_s(kyura):
     if BOTLOG_CHATID == -100:
         return
     if gvarstatus("PMLOG") and gvarstatus("PMLOG") == "false":
         return
-    sender = await kontol.get_sender()
+    sender = await kyura.get_sender()
     await asyncio.sleep(0.5)
     if not sender.bot:
-        chat = await kontol.get_chat()
+        chat = await kyura.get_chat()
         if not no_log_pms_sql.is_approved(chat.id) and chat.id != 777000:
             if LOG_CHATS_.RECENT_USER != chat.id:
                 LOG_CHATS_.RECENT_USER = chat.id
@@ -69,14 +69,14 @@ async def monito_p_m_s(kontol):
                         )
                     )
                     LOG_CHATS_.COUNT = 0
-                LOG_CHATS_.NEWPM = await kontol.client.send_message(
+                LOG_CHATS_.NEWPM = await kyura.client.send_message(
                     BOTLOG_CHATID,
                     f"**💌 #MENERUSKAN #PESAN_BARU**\n** • Dari : **{_format.mentionuser(sender.first_name , sender.id)}\n** • User ID:** `{chat.id}`",
                 )
             try:
-                if kontol.message:
-                    await kontol.client.forward_messages(
-                        BOTLOG_CHATID, kontol.message, silent=True
+                if kyura.message:
+                    await kyura.client.forward_messages(
+                        BOTLOG_CHATID, kyura.message, silent=True
                     )
                 LOG_CHATS_.COUNT += 1
             except Exception as e:
@@ -88,12 +88,12 @@ async def monito_p_m_s(kontol):
 async def log_tagged_messages(yahaha):
     if BOTLOG_CHATID == -100:
         return
-    hmm = await yahaha.get_chat()
+    pornhub = await yahaha.get_chat()
 
     if gvarstatus("GRUPLOG") and gvarstatus("GRUPLOG") == "false":
         return
     if (
-        (no_log_pms_sql.is_approved(hmm.id))
+        (no_log_pms_sql.is_approved(pornhub.id))
         or (BOTLOG_CHATID == -100)
         or (await yahaha.get_sender() and (await yahaha.get_sender()).bot)
     ):
@@ -106,11 +106,11 @@ async def log_tagged_messages(yahaha):
     messaget = media_type(yahaha)
     resalt = f"<b>📨 #TAGS #MESSAGE</b>\n<b> • Dari : </b>{_format.htmlmentionuser(full.first_name , full.id)}"
     if full is not None:
-        resalt += f"\n<b> • Grup : </b><code>{hmm.title}</code>"
+        resalt += f"\n<b> • Grup : </b><code>{pornhub.title}</code>"
     if messaget is not None:
         resalt += f"\n<b> • Jenis Pesan : </b><code>{messaget}</code>"
     else:
-        resalt += f"\n<b> • 👀 </b><a href = 'https://t.me/c/{hmm.id}/{event.message.id}'>Lihat Pesan</a>"
+        resalt += f"\n<b> • 👀 </b><a href = 'https://t.me/c/{pornhub.id}/{event.message.id}'>Lihat Pesan</a>"
     resalt += f"\n<b> • Message : </b>{yahaha.message.message}"
     await asyncio.sleep(0.5)
     if not yahaha.is_private:
