@@ -402,12 +402,6 @@ with bot:
         quit(1)
 
 
-async def check_alive():
-    await bot.send_message(
-        BOTLOG_CHATID,
-        "**Userbot Has Been Deployed⚡**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Kyura-Userbot`\n❃ **BotVer :** `8.0.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @kyurasupport\n━━━━━━━━━━━━━━━")
-    return
-
 
 with bot:
     try:
