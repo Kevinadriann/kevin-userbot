@@ -402,17 +402,6 @@ with bot:
         quit(1)
 
 
-
-with bot:
-    try:
-        bot.loop.run_until_complete(check_alive())
-    except BaseException:
-        LOGS.info(
-            "BOTLOG_CHATID environment variable isn't a "
-            "valid entity. Check your environment variables/config.env file."
-        )
-        quit(1)
-
 # Global Variables
 COUNT_MSG = 0
 USERS = {}
