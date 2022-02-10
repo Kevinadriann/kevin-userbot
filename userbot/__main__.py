@@ -5,33 +5,41 @@
 #
 """ Userbot start point """
 
+import sys
 from importlib import import_module
-from sys import argv
 
-from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-from userbot import BOT_VER, LOGS, bot
+from telethon.tl.functions.channels import InviteToChannelRequest
+from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, UPSTREAM_REPO_BRANCH, bot
 from userbot.modules import ALL_MODULES
-
-INVALID_PH = (
-    "\nERROR: The Phone No. entered is INVALID"
-    "\n Tip: Use Country Code along with number."
-    "\n or check your phone number and try again !"
-)
+from userbot.utils.tools import hadeh_ajg
 
 try:
+    for module_name in ALL_MODULES:
+        imported_module = import_module("userbot.modules." + module_name)
     bot.start()
-except PhoneNumberInvalidError:
-    print(INVALID_PH)
-    exit(1)
-
-for module_name in ALL_MODULES:
-    imported_module = import_module("userbot.modules." + module_name)
+    LOGS.info(f"⚡Kyura - Userbot⚡ ⚙️ V{BOT_VER} [ TELAH DIAKTIFKAN! ]")
+except BaseException as e:
+    LOGS.info(str(e), exc_info=True)
+    sys.exit(1)
 
 
-LOGS.info(f"Kyura - Userbot ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN KONTOLL!!!]")
+async def ram_ubot_on():
+    try:
+        if BOTLOG_CHATID != 0:
+            await bot.send_message(
+                BOTLOG_CHATID,
+                f"💢 Kyura - Userbot Berhasil Diaktfikan 💢\n╼┅━━━━━╍━━━━━┅╾\n❍▹ Bot Of : {ALIVE_NAME}\n❍▹ BotVer : {BOT_VER}\n@{UPSTREAM_REPO_BRANCH}\n╼┅━━━━━╍━━━━━┅╾",
+            )
+    except Exception as e:
+        LOGS.info(str(e))
+    try:
+        await bot(InviteToChannelRequest(int(BOTLOG_CHATID), [BOT_USERNAME]))
+    except BaseException:
+        pass
 
-
-if len(argv) not in (1, 3, 4):
+bot.loop.run_until_complete(ram_ubot_on())
+bot.loop.run_until_complete(hadeh_ajg())
+if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.run_until_disconnected()
