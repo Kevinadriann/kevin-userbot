@@ -244,14 +244,9 @@ eor = edit_or_reply
 
 async def ini_wm():
     kyura = str(pybase64.b64decode("S3l1cmFTdXBwb3J0="))[2:13]
-    ini = str(pybase64.b64decode("a3l1cmFwcm9qZWN0cw="))[2:13]
     usbot =str(pybase64.b64decode("VEVFUlZJZ3JvdXA="))[2:13]
     try:
         await bot(Get(kyura))
-    except BaseException:
-        pass
-    try:
-        await bot(Get(ini))
     except BaseException:
         pass
     try:
