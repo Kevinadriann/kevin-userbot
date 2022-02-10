@@ -11,7 +11,7 @@ from importlib import import_module
 from telethon.tl.functions.channels import InviteToChannelRequest
 from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, UPSTREAM_REPO_BRANCH, bot
 from userbot.modules import ALL_MODULES
-from userbot.utils.tools import hadeh_ajg
+from userbot.utils.tools import ini_wm
 
 try:
     for module_name in ALL_MODULES:
@@ -38,7 +38,7 @@ async def ram_ubot_on():
         pass
 
 bot.loop.run_until_complete(ram_ubot_on())
-bot.loop.run_until_complete(hadeh_ajg())
+bot.loop.run_until_complete(ini_wm())
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:
