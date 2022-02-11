@@ -14,7 +14,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 GCAST_BLACKLIST = [
-    -1001752592753,  # Skyzusupport
+    -1001459812644,  # Skyzusupport
     -1001575341991,  # Kyurasupport
 ]
 
