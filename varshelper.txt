@@ -13,7 +13,7 @@ BOTLOG_CHATID =
 BOTLOG = True or False
 LOGSPAMMER = True or False
 
-# Bleep Blop, this is a bot ;)
+# Bleep Blop, this is a bot :)
 PM_AUTO_BAN = True or False
 
 # Heroku Credentials for updater. this vars are important
