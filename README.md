@@ -35,6 +35,7 @@
  **THANKS YOU TO**
 *   [Sendi](https://github.com/SendiAp/Rose-Userbot)   Rose-Userbot
 *   [Risman](https://github.com/mrismanaziz/Man-Userbot)   Man - Userbot
+*   [Kyy](https://github.com/muhammadrizky16/Kyy-Userbot)   Kyy-Userbot
 *   [Skyzu](https://github.com/Skyzu/skyzu-userbot)   skyzu-userbot
 *   [Kyura](https://github.com/Kyuraxp/kyura-userbot) Kyura-Userbot
 *   DAN TERIMAKASIH KEPADA USERBOT LAINNYA
