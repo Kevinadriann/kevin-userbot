@@ -73,18 +73,18 @@ async def get_readable_time(seconds: int) -> str:
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
-async def _(skyzuu):
-    await skyzuu.reply(random.choice(absen))
+async def _(kyura):
+    await kyura.reply(random.choice(absen))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.brb$")
 async def _(kyura):
-    await skyzuu.reply(random.choice(brb))
+    await kyura.reply(random.choice(brb))
 
 
 @register(incoming=True, from_users=DEVS, pattern=r"^.roas$")
-async def _(skyzuu):
-    await skyzuu.reply(random.choice(roas))
+async def _(kyura):
+    await kyura.reply(random.choice(roas))
 
 
 @register(outgoing=True, pattern="^.sping$")
