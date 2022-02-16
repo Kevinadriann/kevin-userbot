@@ -40,7 +40,7 @@ async def kyura_usbot_on():
     except BaseException:
         pass
 
-bot.loop.run_until_complete(check_alive())
+bot.loop.run_until_complete(kyura_usbot_on())
 if not BOT_TOKEN:
     LOGS.info(
         "BOT_TOKEN Vars tidak terisi, Memulai Membuat BOT Otomatis di @Botfather..."
