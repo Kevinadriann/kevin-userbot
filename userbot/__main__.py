@@ -13,7 +13,8 @@ from telethon.tl.functions.channels import InviteToChannelRequest
 from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, BOT_TOKEN, LOGS, UPSTREAM_REPO_BRANCH, bot
 from userbot.modules import ALL_MODULES
 from userbot.utils.tools import ini_wm
-from userbot.utils.utils import autobot
+from userbot.utils import autobot
+
 
 try:
     for module_name in ALL_MODULES:
