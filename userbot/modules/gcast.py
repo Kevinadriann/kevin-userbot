@@ -5,6 +5,7 @@ GCAST_BLACKLIST = [
     -1001575341991,  # Kyurasupport
     -1001795125065,  # bagasngontol
     -1001459812644,  # GeezNew
+    -1001380293847,  # Nasty
 ]
 
 
