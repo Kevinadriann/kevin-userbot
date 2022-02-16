@@ -15,10 +15,13 @@
   <img src="https://telegra.ph/file/025f9ecf340ff101fc9fe.jpg">
 </p>
 
-## <p align="center">DEPLOY TO HEROKU</p>
+<h2 align="center">
+   Metode Deploy
+</h2>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Kyuraxp/kyura-userbot">
-  <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-aqua?style=flat&logo=heroku" width="325" height="50.100" /></a></p>
+<p align="center">
+<a href="https://dashboard.heroku.com/new?template=https://github.com/Kyuraxp/kyura-userbot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
+<a href="https://telegram.dog/XTZ_HerokuBot?start=S3l1cmF4cC9reXVyYS11c2VyYm90IEt5dXJhLVVzZXJib3Q"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
 
 
