@@ -8,10 +8,12 @@
 import sys
 from importlib import import_module
 
+import requests
 from telethon.tl.functions.channels import InviteToChannelRequest
-from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, LOGS, UPSTREAM_REPO_BRANCH, bot
+from userbot import ALIVE_NAME, BOT_USERNAME, BOT_VER, BOTLOG_CHATID, BOT_TOKEN, LOGS, UPSTREAM_REPO_BRANCH, bot
 from userbot.modules import ALL_MODULES
 from userbot.utils.tools import ini_wm
+from userbot.utils autobot
 
 try:
     for module_name in ALL_MODULES:
@@ -37,8 +39,14 @@ async def kyura_usbot_on():
     except BaseException:
         pass
 
+bot.loop.run_until_complete(check_alive())
+if not BOT_TOKEN:
+    LOGS.info(
+        "BOT_TOKEN Vars tidak terisi, Memulai Membuat BOT Otomatis di @Botfather..."
+    )
 bot.loop.run_until_complete(kyura_usbot_on())
 bot.loop.run_until_complete(ini_wm())
+bot.loop.run_until_complete(autobot())
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
 else:

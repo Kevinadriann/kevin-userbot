@@ -229,6 +229,11 @@ INLINE_PIC = (os.environ.get("INLINE_PIC")
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✗"
 
+# °Kyura-Userbot°
+OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/kyuraonly"
+
+
+
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
