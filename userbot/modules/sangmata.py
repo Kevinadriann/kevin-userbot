@@ -20,7 +20,7 @@ async def lastname(steal):
     if message.sender.bot:
         await steal.edit("```Balas Ke Pesan Pengguna Yang Sebenarnya.```")
         return
-    await steal.edit("```Lu siapa si ngentot, gua intip sabi laa..```")
+    await steal.edit("```Lu siapa si anj, jadi kepo gw bgst..```")
     try:
         async with bot.conversation(chat) as conv:
             try:
@@ -54,12 +54,12 @@ async def lastname(steal):
                 conv.chat_id, [msg.id, r.id, response.id, respond.id]
             )
     except TimeoutError:
-        return await steal.edit("`Saya Sedang Sakit Mohon Maaf`")
+        return await steal.edit("`Saya Sedang Sakit Mohon Maaf Tuan🤧`")
 
 
 CMD_HELP.update(
     {
-        "sangmata": "`.sa`\
+        "sangmata": "`.sg`\
           \nUsage: Mendapatkan Riwayat Nama Pengguna."
     }
 )
