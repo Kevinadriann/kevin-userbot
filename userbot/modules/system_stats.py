@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"➠ **Bot Ver**  : `{BOT_VER}` \n"
         f"➠ **Modules**  : `{len(modules)}` \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/kyurasupport) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kyuraxp/kyura-userbot)"
+        f"[ɢʀᴏᴜᴘꜱ](https://t.me/kyurasupport2) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kyuraxp/kyura-userbot)"
     )
     if ALIVE_LOGO:
         try:
@@ -270,7 +270,7 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"●▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬● \n"
-        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[KYURA](t.me/kyuraonly)             ㅤ \n"
+        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[KYURA](t.me/kyuraxx)             ㅤ \n"
         f"✾ 🖥️ • `ꜱʏꜱᴛᴇᴍ. :`Ubuntu 20.10            \n"
         f"✾ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ :`v.{version.__version__}                ㅤㅤ  \n"
         f"✾ 🐍 • `ᴘʏᴛʜᴏɴ. :`v.{python_version()} ㅤㅤ\n"
@@ -321,8 +321,8 @@ async def redis(alive):
         f"┃✩ **Bot Ver :** {BOT_VER} \n"
         f"┃✩ **Modules :** {len(modules)} Modules \n"
         f"┃✩ **Repo :** [UserBot](https://github.com/Kyuraxp/kyura-userbot) \n"
-        f"┃✩ **Owner Repo :** [Kyura](https://t.me/kyuraonly) \n"
-        f"┃✩ **support :** [groups](https://t.me/kyurasupport) \n"
+        f"┃✩ **Owner Repo :** [Kyura](https://t.me/kyuraxx) \n"
+        f"┃✩ **support :** [groups](https://t.me/kyurasupport2) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━✠╯"
     )
     if ALIVE_LOGO:
