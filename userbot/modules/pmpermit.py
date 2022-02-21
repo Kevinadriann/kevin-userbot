@@ -50,7 +50,7 @@ DEF_UNAPPROVED_MSG = (
     "**TOLONG JANGAN MELAKUKAN SPAM CHAT KEPADA MAJIKAN SAYA** \n"
     f"**YA KONTOL KARENA SAYA AKAN OTOMATIS MEMBLOKIR KAMU, TUNGGU SAMPAI {DEFAULTUSER} MENERIMA PESAN KAMU** \n"
     "╔═════════════════════╗\n"
-    "│○›Support : @kyurasupport      \n"
+    "│○›Support : @kyurasupport2      \n"
     f"│○›ᗷy : 𝐊𝐘𝐔𝐑𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓​           \n"
     "╚═════════════════════╝"
 )
