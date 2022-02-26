@@ -17,11 +17,11 @@ from userbot import ALIVE_NAME, CMD_HELP, DEVS, StartTime
 from userbot.events import register
 
 absen = [
-    "**Eh ada kyura**",
+    "**Eh ada kevin**",
     "**Hadir ganteng** 🥵",
     "**Hadir Sayang** 😘",
     "**Hadir kak** 😉",
-    "**Hadir bang kyura** 😁",
+    "**Hadir bang kevin** 😁",
     "**Hadir kak maap telat** 🥺",
 ]
 
@@ -159,7 +159,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡𝐊𝐘𝐔𝐑𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓​⚡**\n"
+        f"**⚡Kevin Userbot​⚡**\n"
         f"➠ __Signal__    __:__ "
         f"`%sms` \n"
         f"➠ __Uptime__ __:__ "
@@ -183,7 +183,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**⚡𝐊𝐘𝐔𝐑𝐀 𝐔𝐒𝐄𝐑𝐁𝐎𝐓​⚡**\n"
+        f"**⚡Kevin Userbot​⚡**\n"
         f"** ➠  Sɪɢɴᴀʟ   :** "
         f"`%sms` \n"
         f"** ➠  Uᴘᴛɪᴍᴇ  :** "
@@ -236,7 +236,7 @@ async def speedtst(spd):
         f"`{result['ping']}` \n"
         "✧ **ISP:** "
         f"`{result['client']['isp']}` \n"
-        "✧ **BOT:** ⚡kyura-userbot⚡"
+        "✧ **BOT:** ⚡kevin-userbot⚡"
     )
 
 
@@ -271,7 +271,7 @@ async def pingme(pong):
     await pong.edit("`Pong🐤...........`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**⚡Oᴡɴᴇʀ : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
+    await pong.edit(f"**⚡Kevin : {ALIVE_NAME}**\n📗 `%sms`" % (duration))
 
 
 @register(outgoing=True, pattern="^.pink$")
