@@ -63,7 +63,7 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """For .shutdown command, shut the bot down."""
-    await event.edit("**Mematikan Kyura-Userbot....**")
+    await event.edit("**Mematikan Kevin-Userbot....**")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
@@ -75,7 +75,7 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("**Restarting Kyura-Userbot...**")
+    await event.edit("**Restarting Kevin Userbot...**")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's Something for You to Read :\n"
-        "\n[⚡ Kyura-UserBot Repo](https://github.com/Kyuraxp/kyura-userbot/blob/skyzu-userBot/README.md)"
+        "\n[⚡ Kevin Userbot Repo](https://github.com/Kevinandriann/kevin-userbot/blob/skyzu-userBot/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Special - Note](https://telegra.ph/Special-Note-11-02)"
     )
@@ -118,10 +118,10 @@ async def repo_is_here(wannasee):
     """For .repo command, just returns the repo URL."""
     await wannasee.edit(
         "**𝐓𝐇𝐀𝐍𝐊𝐒 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐌𝐄**\n"
-        "✣ **ᴍʏ ʀᴇᴘᴏ​** ➠ [ᴋʏᴜʀᴀ-ᴜsᴇʀʙᴏᴛ​](https://github.com/Kyuraxp/kyura-userbot)\n"
-        "✣ **Oᴡɴᴇʀ​** ➠ [ᴋʏᴜʀᴀ](t.me/kyuraxx)\n"
-        "✣ **Sᴜᴘᴘᴏʀᴛ​** ➠ [ɢʀᴏᴜᴘ](t.me/kyurasupport2)\n"
-        "✣ **ᴘʀᴏᴊᴇᴄᴛs**​ ➠ [ᴄʜᴀɴɴᴇʟ](t.me/kyuraproject)\n"
+        "✣ **ᴍʏ ʀᴇᴘᴏ​** ➠ [Kevin-Userbot​](https://github.com/Kevinadriann/kevin-userbot)\n"
+        "✣ **Oᴡɴᴇʀ​** ➠ [ᴋʏᴜʀᴀ](t.me/sylucaz)\n"
+        "✣ **Sᴜᴘᴘᴏʀᴛ​** ➠ [ɢʀᴏᴜᴘ](t.me/margaace)\n"
+        "✣ **ᴘʀᴏᴊᴇᴄᴛs**​ ➠ [ᴄʜᴀɴɴᴇʟ](t.me/gabutnyaasy)\n"
     )
 
 
