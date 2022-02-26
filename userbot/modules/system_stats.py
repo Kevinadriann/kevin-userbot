@@ -168,8 +168,8 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡Kyura-Userbot⚡ Versi:** \n "
-            f"heads/Kyura-Userbot-0-x634i7u1"
+            "**⚜-**⚡Kevin-Userbot⚡ Versi:** \n "
+            f"heads/Kevin-Userbot-0-x634i7u1"
             "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
@@ -227,7 +227,7 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:kyuraalive)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:kevinalive)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"➠ **Bot Ver**  : `{BOT_VER}` \n"
         f"➠ **Modules**  : `{len(modules)}` \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/kyurasupport2) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kyuraxp/kyura-userbot)"
+        f"[ɢʀᴏᴜᴘꜱ](https://t.me/margaace) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kevinadriann/kevin-userbot)"
     )
     if ALIVE_LOGO:
         try:
@@ -264,13 +264,13 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:kyuraon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:kevinon)\s?(.)?")
 async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
         f"●▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬● \n"
-        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[KYURA](t.me/kyuraxx)             ㅤ \n"
+        f"✾ 🤴 • `ᴏᴡɴᴇʀ :`[KEVIN](t.me/sylucaz)             ㅤ \n"
         f"✾ 🖥️ • `ꜱʏꜱᴛᴇᴍ. :`Ubuntu 20.10            \n"
         f"✾ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ :`v.{version.__version__}                ㅤㅤ  \n"
         f"✾ 🐍 • `ᴘʏᴛʜᴏɴ. :`v.{python_version()} ㅤㅤ\n"
@@ -320,9 +320,9 @@ async def redis(alive):
         f"┃✩ **Branch :** {UPSTREAM_REPO_BRANCH} \n"
         f"┃✩ **Bot Ver :** {BOT_VER} \n"
         f"┃✩ **Modules :** {len(modules)} Modules \n"
-        f"┃✩ **Repo :** [UserBot](https://github.com/Kyuraxp/kyura-userbot) \n"
-        f"┃✩ **Owner Repo :** [Kyura](https://t.me/kyuraxx) \n"
-        f"┃✩ **support :** [groups](https://t.me/kyurasupport2) \n"
+        f"┃✩ **Repo :** [UserBot](https://github.com/Kevinadriann/kevin-userbot) \n"
+        f"┃✩ **Owner Repo :** [Kyura](https://t.me/sylucaz) \n"
+        f"┃✩ **support :** [groups](https://t.me/margaace) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━✠╯"
     )
     if ALIVE_LOGO:
