@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the Rose-Userbot branch
   push:
-    branches: [ Kyura-Useerbot ]
+    branches: [ Kyura-Userbot ]
   pull_request:
     branches: [ Kyura-Userbot ]
 
