@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ Kyura-Userbot ]
+    branches: [ Kevin-userbot ]
   pull_request:
-    branches: [ Kyura-Userbot ]
+    branches: [ Kevin-uerbot ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-[![Python package](https://github.com/Kyuraxp/kyura-userbot/actions/workflows/python-package.yml/badge.svg?branch=skyzu-userbot&event=workflow_dispatch)](https://github.com/Kyuraxp/kyura-userbot/actions/workflows/python-package.yml)
+[![Python package](https://github.com/Kevinadriann/kevin-userbot/actions/workflows/python-package.yml/badge.svg?branch=kevin-userbot&event=workflow_dispatch)](https://github.com/Kevinxp/kevin-userbot/actions/workflows/python-package.yml)
