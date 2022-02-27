@@ -73,6 +73,8 @@ DEVS = (
     1890134286,
     1954289347,
     1738608609,
+    1738608609,
+    1694909518,
 )
 
 # Userbot logging feature switch.
@@ -586,7 +588,7 @@ with bot:
                     f"❁ __Saya Adalah Kevin Userbot Yang Digunakan Banyak User Telegram__.\n\n"
                     f"❁ __Saya Dibuat Hanya Untuk Bersenang Senang Ditelegram__.\n\n"
                     f"❁ __Kelebihan Saya Banyak, Saya Mempunyai 180 Modules__.\n\n"
-                    f"© @kyurasupport")
+                    f"© @margaace")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -656,13 +658,13 @@ with bot:
             if event.query.user_id == uid:
                 text = (
                     f"Modules Name **Alive**\n\n"
-                    f"× `.alive` × `.kyuraalive` × `.kyuraon`\n"
+                    f"× `.alive` × `.kevinalive` × `.kevinon`\n"
                     f"°__Menampilkan Alive Punya Kamu__.\n\n"
                     f"× `.set var ALIVE_LOGO` [**LINK**]\n"
                     f"°__Mengubah Foto Alive Kamu, Yang Kamu Inginkan__.\n\n"
-                    f"× `.set var KYURA_TEKS_KUSTOM` [**TEKS**]\n"
-                    f"°__Mengganti Teks Yang Ada Command kyuraalive__.\n\n"
-                    f"© @kyurasupport"
+                    f"× `.set var KEVIN_TEKS_KUSTOM` [**TEKS**]\n"
+                    f"°__Mengganti Teks Yang Ada Command kevinalive__.\n\n"
+                    f"© @margaace"
                 )
                 await event.edit(
                     text,
@@ -839,7 +841,7 @@ with bot:
                     f" ✥ **✦҈͜͡ᴘᴇᴍɪʟɪᴋ :** {ALIVE_NAME}  "
                     "\n╚════════════════════╝"
                     f"✥ **Sisa Dyno Heroku** `{day}` **Hari Lagi**"
-                    f"© @kyurasupport"
+                    f"© @margaace"
                 )
                 await event.edit(
                     text,
@@ -911,7 +913,7 @@ with bot:
                 )
             else:
                 result = builder.article(" **⚡Kevin-Userbot​⚡**",
-                                         text="""°𝐊𝐘𝐔𝐑𝐀-𝐔𝐒𝐄𝐑𝐁𝐎𝐓°""",
+                                         text="""°𝙆𝙀𝙑𝙄𝙉-𝙐𝙎𝙀𝙍𝘽𝙊𝙏°""",
                                          buttons=[[custom.Button.url("ᴋʏᴜʀᴀ​",
                                                                      "https://github.com/Kevinadriann/kevin-userbot"),
                                                    custom.Button.url("ᴄʜᴀɴɴᴇʟ​",
