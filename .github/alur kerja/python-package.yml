@@ -4,7 +4,7 @@ on:
   push:
     branches: [ Kyura-Userbot ]
   pull_request:
-    branches: [ Kyura-Uerbot ]
+    branches: [ Kyura-Userbot ]
 
 jobs:
   build:
