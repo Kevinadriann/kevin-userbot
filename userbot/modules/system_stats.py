@@ -232,7 +232,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"Ҝㄚㄩ尺卂 卂ㄥ丨ᐯ乇\n\n"
+        f"𝙺𝙴𝚅𝙸𝙽 𝙰𝙻𝙸𝚅𝙴\n\n"
         f"\n__**{ROSE_TEKS_KUSTOM}**__\n\n\n"
         f"╭✠╼━━━━━━━━━━━━━━━✠╮\n"
         f"➠ **Name** : `{DEFAULTUSER}` \n"
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"➠ **Bot Ver**  : `{BOT_VER}` \n"
         f"➠ **Modules**  : `{len(modules)}` \n"
         f"╰✠╼━━━━━━━━━━━━━━━✠╯\n"
-        f"[ɢʀᴏᴜᴘꜱ](https://t.me/margaace) | [ʙᴏᴛᴏꜰ](https://t.me/{user.username}) | [ɢɪᴛʜᴜʙ](https://github.com/Kevinadriann/kevin-userbot)"
+        f"[ɢʀᴏᴜᴘꜱ](https://t.me/margaace) | [ʙᴏᴛᴏꜰ](https://t.me/{Sylucaz}) | [ɢɪᴛʜᴜʙ](https://github.com/Kevinadriann/kevin-userbot)"
     )
     if ALIVE_LOGO:
         try:
@@ -309,7 +309,7 @@ async def redis(alive):
     await alive.edit("__Sedang Memuat...__")
     await alive.edit("__Sedang Memuat..__")
     await alive.edit("__Sedang Memuat...__")
-    await alive.edit("🌙")
+    await alive.edit("💀")
     await asyncio.sleep(2)
     output = (
         f"╭✠╼━━━━━━━━━━━━━━━━✠╮\n"
@@ -321,7 +321,7 @@ async def redis(alive):
         f"┃✩ **Bot Ver :** {BOT_VER} \n"
         f"┃✩ **Modules :** {len(modules)} Modules \n"
         f"┃✩ **Repo :** [UserBot](https://github.com/Kevinadriann/kevin-userbot) \n"
-        f"┃✩ **Owner Repo :** [Kyura](https://t.me/sylucaz) \n"
+        f"┃✩ **Owner Repo :** [Kevin](https://t.me/Sylucaz) \n"
         f"┃✩ **support :** [groups](https://t.me/margaace) \n"
         f"╰✠╼━━━━━━━━━━━━━━━━✠╯"
     )
