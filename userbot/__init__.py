@@ -70,7 +70,7 @@ BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", ""))
 
 # DEVS
 DEVS = (
-    1890134386,
+    1890134286,
     1738608609,
     1954289347,
 )
