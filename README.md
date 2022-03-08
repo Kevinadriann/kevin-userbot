@@ -21,13 +21,13 @@
 
 <p align="center">
 <a href="https://dashboard.heroku.com/new?template=https://github.com/Kevinadriann/kevin-userbot"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="250""/</a>  
-<a href="https://telegram.dog/XTZ_HerokuBot?start=S3l1cmF4cC9reXVyYS11c2VyYm90IEt5dXJhLVVzZXJib3Q"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
+<a href="https://telegram.dog/XTZ_HerokuBot?start=S2V2aW5hZHJpYW5uL2tldmluLXVzZXJib3Qga2V2aW4tdXNlcmJvdA"><img src="https://img.shields.io/badge/Deploy%20Via%20Telegram-blue?style=for-the-badge&logo=telegram" width="250""/</a>  </p>
 
 
 
 ## Group Support:
 
-   <a href="https://t.me/kyurasupport"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+   <a href="https://t.me/margaace"><img src="https://img.shields.io/badge/Group%20Support%3F-yes-green?&style=flat-square?&logo=telegram" width=220px></a></p>
 
 
 ## Stay Support 🚀
