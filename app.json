@@ -23,7 +23,7 @@
       "required": true
     },
      "STRING_SESSION": {
-      "description": "Dapatkan String Session di @kyurasupport2 lalu ketik #string di telegram",
+      "description": "Dapatkan String Session di @margaace lalu ketik /get string di telegram",
       "required": true
     },
     "HEROKU_APP_NAME": {
