@@ -6,7 +6,7 @@ GCAST_BLACKLIST = [
     -1001795125065,  # bagasngontol
     -1001459812644,  # GeezNew
     -1001380293847,  # Nasty
-    -1001473548283,  # sharing bot telegram
+    -1001473548283,  # sharingbot
 ]
 
 
